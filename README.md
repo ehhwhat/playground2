@@ -1,6 +1,13 @@
 # Welcome to my playground
 
-Here you will find code examples that i have been messing around with. At the moment i have sections on Vanilla JavaScript.
+Here you will find code examples that i have been messing around with. At the moment i have sections on...
+
+### Vanilla JavaScript
+- Maths
+- (Arrays)
+- (Objects)
+- (Constructors)
+- (Demo Bookshelf app)
 
 ## Coming soon / To do
 - Jquery
