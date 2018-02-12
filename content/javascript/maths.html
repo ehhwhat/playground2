@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+    <!-- CSS -->
+    <!-- Add Material font (Roboto) and Material icon as needed -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="../../css/material.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Javascript</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Maths <span class="sr-only">(current)</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+    <hr class="mt-5 mb-5 invisible"/>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body text-white">
+<pre><code class=" text-white">function numberToSquareFunc(input){
+    result = input * input;
+    document.getElementById(&#x22;numberToSquareResult&#x22;).innerHTML += &#x22;&#x3C;span class=&#x27;text-success&#x27;&#x3E;&#x22; +input+ &#x22;&#x3C;sup&#x3E;2&#x3C;/sup&#x3E; = &#x22; +result+ &#x22;. &#x3C;/span&#x3E;&#x22;;
+    return result;
+}
+
+document.getElementById(&#x27;numberToSquareSubmit&#x27;).onclick = function() {
+    var value = document.getElementById(&#x27;numberToSquare&#x27;).value;
+    numberToSquareFunc(value);
+};
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h2 class="display-4">Number to square</h2>
+                    <p class="">Takes a number as an input and multiples it by itself.</p>
+                </div>
+                <div class="card-body">
+                    <hr class="invisible"/>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="numberToSquare">Number to square</label>
+                            <input type="number" class="form-control" id="numberToSquare" aria-describedby="numberToSquareHelp" placeholder="Number to square">
+                        </div>
+                        <button id="numberToSquareSubmit" type="submit" class="btn btn-info float-right">Go</button>
+                    </form>
+                </div>
+                <div class="card-footer bg-light-2 ">
+                    <p id="numberToSquareResult">Result: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-5 mb-5 invisible"/>
+<script>
+function numberToSquareFunc(input){
+    result = input * input;
+    document.getElementById("numberToSquareResult").innerHTML += "<span class='text-success'>" +input+ "<sup>2</sup> = " +result+ ". </span>";
+    return result;
+}
+
+document.getElementById('numberToSquareSubmit').onclick = function() {
+    var value = document.getElementById('numberToSquare').value;
+    numberToSquareFunc(value);
+};
+</script>
+</div>
+
+
+
+
+<div class="container">
+    <hr class="mt-5 mb-5 invisible"/>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body text-white">
+<pre><code class=" text-white">function numberToCubeFunc(input){
+    result = input * input * input;
+    document.getElementById(&#x22;numberToCubeResult&#x22;).innerHTML += &#x22;&#x3C;span class=&#x27;text-success&#x27;&#x3E;&#x22; +input+ &#x22;&#x3C;sup&#x3E;3&#x3C;/sup&#x3E; = &#x22; +result+ &#x22;. &#x3C;/span&#x3E;&#x22;;
+    return result;
+}
+
+document.getElementById(&#x27;numberToCubeSubmit&#x27;).onclick = function() {
+    var value = document.getElementById(&#x27;numberToCube&#x27;).value;
+    numberToCubeFunc(value);
+};
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h2 class="display-4">Number to cube</h2>
+                    <p class="">Takes a number as an input and multiples it by itself and again.</p>
+                </div>
+                <div class="card-body">
+                    <hr class="invisible"/>
+                    <form action="#numberToCubeResult">
+                        <div class="form-group">
+                            <label for="numberToCube">Number to cube</label>
+                            <input type="number" class="form-control" id="numberToCube" aria-describedby="numberToCubeHelp" placeholder="Number to cube">
+                        </div>
+                        <button id="numberToCubeSubmit" type="submit" class="btn btn-info float-right">Go</button>
+                    </form>
+                </div>
+                <div class="card-footer bg-light-2 ">
+                    <p id="numberToCubeResult">Result: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-5 mb-5 invisible"/>
+<script>
+function numberToCubeFunc(input){
+    result = input * input * input;
+    document.getElementById("numberToCubeResult").innerHTML += "<span class='text-success'>" +input+ "<sup>3</sup> = " +result+ ". </span>";
+    return result;
+}
+
+document.getElementById('numberToCubeSubmit').onclick = function() {
+    var value = document.getElementById('numberToCube').value;
+    numberToCubeFunc(value);
+};
+</script>
+</div>
+
+
+
+
+
+<div class="container">
+    <hr class="mt-5 mb-5 invisible"/>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body text-white">
+<pre><code class=" text-white">function numberCalcFunc(input1, device, input2){
+    result = input1 + device + input2;
+    var answer = eval(result);
+    document.getElementById(&#x22;numberCalcResult&#x22;).innerHTML += &#x22;&#x3C;span class=&#x27;text-success&#x27;&#x3E;&#x22; +result+ &#x22; = &#x22; +answer+ &#x22;. &#x3C;/span&#x3E;&#x22;;
+    return answer;
+}
+
+document.getElementById(&#x27;numberCalcSubmit&#x27;).onclick = function() {
+    var value1 = document.getElementById(&#x27;numberOne&#x27;).value;
+    var value2 = document.getElementById(&#x27;numberDevice&#x27;).value;
+    var value3 = document.getElementById(&#x27;numberTwo&#x27;).value;
+    numberCalcFunc(value1, value2, value3);
+};
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h2 class="display-4">Basic calculator</h2>
+                    <p class="">???</p>
+                </div>
+                <div class="card-body">
+                    <hr class="invisible"/>
+                    <form action="#numberCalcResult">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="numberOne">Number One</label>
+                                    <input type="number" class="form-control" id="numberOne" aria-describedby="" placeholder="Number One">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="numberDevice">Math device</label>
+                                    <select class="form-control" id="numberDevice">
+                                        <option value="+">+</option>
+                                        <option value="-">-</option>
+                                        <option value="*">*</option>
+                                        <option value="/">/</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="numberTwo">Number Two</label>
+                                    <input type="number" class="form-control" id="numberTwo" aria-describedby="" placeholder="Number Two">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="numberCalcSubmit" type="submit" class="btn btn-info float-right">Go</button>
+                    </form>
+                    <hr class="invisible"/>
+                </div>
+                <div class="card-footer bg-light-2 ">
+                    <p id="numberCalcResult">Result: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-5 mb-5 invisible"/>
+<script>
+function numberCalcFunc(input1, device, input2){
+    result = input1 + device + input2;
+    var answer = eval(result);
+    document.getElementById("numberCalcResult").innerHTML += "<span class='text-success'>" +result+ " = " +answer+ ". </span>";
+    return answer;
+}
+
+document.getElementById('numberCalcSubmit').onclick = function() {
+    var value1 = document.getElementById('numberOne').value;
+    var value2 = document.getElementById('numberDevice').value;
+    var value3 = document.getElementById('numberTwo').value;
+    numberCalcFunc(value1, value2, value3);
+};
+</script>
+</div>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+<script src="../../js/material.min.js"></script>
+
+
+
+
+
+</body>
+</html>
