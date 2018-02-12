@@ -26,10 +26,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#">Features</a>
-                            <a class="nav-item nav-link" href="#">Pricing</a>
-                            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-item nav-link active" href="#">Maths <span class="sr-only">(current)</span></a>
                         </div>
                     </div>
                 </nav>
@@ -40,18 +37,32 @@
 
 
 <div class="container">
-    <hr/>
+    <hr class="invisible"/>
     <div class="row">
         <div class="col">
-            <h1 class="display-4">Display 1</h1>
-            <p class="">
-                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-            </p>
+            <h1 class="display-4">Number to square</h1>
+            <p class="">Takes a number as an input and multiples it by itself.</p>
         </div>
     </div>
-    <hr/>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body text-white">
+<pre><code class=" text-white">function numberToSquareFunc(input){
+    result = input * input;
+    document.getElementById(&#x22;numberToSquareResult&#x22;).innerHTML += &#x22;&#x3C;p class=&#x27;display-3 text-success&#x27;&#x3E;&#x22; +input+ &#x22;&#x3C;sup&#x3E;2&#x3C;/sup&#x3E; = &#x22; +result+ &#x22;&#x3C;/p&#x3E;&#x22;;
+    return result;
+}
+
+document.getElementById(&#x27;numberToSquareSubmit&#x27;).onclick = function() {
+    var value = document.getElementById(&#x27;numberToSquare&#x27;).value;
+    numberToSquareFunc(value);
+};
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
             <div class="card">
                 <div class="card-body">
                     <form action="#">
@@ -65,13 +76,95 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+    </div>
+    <hr class="invisible"/>
+    <div class="row">
+        <div class="col-sm-12">
             <div id="numberToSquareResult">
-                <h3>Result</h3>
+                <h3>Result...</h3>
             </div>
         </div>
     </div>
-    <hr/>
+    <hr class=""/>
+<script>
+function numberToSquareFunc(input){
+    result = input * input;
+    document.getElementById("numberToSquareResult").innerHTML += "<p class='display-3 text-success'>" +input+ "<sup>2</sup> = " +result+ "</p>";
+    return result;
+}
+
+document.getElementById('numberToSquareSubmit').onclick = function() {
+    var value = document.getElementById('numberToSquare').value;
+    numberToSquareFunc(value);
+};
+</script>
+</div>
+
+
+
+
+<div class="container">
+    <hr class="invisible"/>
+    <div class="row">
+        <div class="col">
+            <h1 class="display-4">Number to cube</h1>
+            <p class="">Takes a number as an input and multiples it by itself and again.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body text-white">
+<pre><code class=" text-white">function numberToCubeFunc(input){
+    result = input * input * input;
+    document.getElementById(&#x22;numberToCubeResult&#x22;).innerHTML += &#x22;&#x3C;p class=&#x27;display-3 text-success&#x27;&#x3E;&#x22; +input+ &#x22;&#x3C;sup&#x3E;3&#x3C;/sup&#x3E; = &#x22; +result+ &#x22;&#x3C;/p&#x3E;&#x22;;
+    return result;
+}
+
+document.getElementById(&#x27;numberToCubeSubmit&#x27;).onclick = function() {
+    var value = document.getElementById(&#x27;numberToCube&#x27;).value;
+    numberToCubeFunc(value);
+};
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="numberToCube">Number to cube</label>
+                            <input type="number" class="form-control" id="numberToCube" aria-describedby="numberToCubeHelp" placeholder="Number to cube">
+                            <small id="emailHelp" class="form-text text-muted">Enter a number you want to cube.</small>
+                        </div>
+                        <button id="numberToCubeSubmit" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="invisible"/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="numberToCubeResult">
+                <h3>Result...</h3>
+            </div>
+        </div>
+    </div>
+    <hr class=""/>
+<script>
+function numberToCubeFunc(input){
+    result = input * input * input;
+    document.getElementById("numberToCubeResult").innerHTML += "<p class='display-3 text-success'>" +input+ "<sup>3</sup> = " +result+ "</p>";
+    return result;
+}
+
+document.getElementById('numberToCubeSubmit').onclick = function() {
+    var value = document.getElementById('numberToCube').value;
+    numberToCubeFunc(value);
+};
+</script>
 </div>
 
 
@@ -87,22 +180,9 @@
 <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
 <script src="../../js/material.min.js"></script>
 
-    <script>
-      // A FUNCTION
-      function testFunc(input){
-        result = input * input;
-        console.log(result);
-        document.getElementById("numberToSquareResult").innerHTML += "<p class='display-3'>" +input+ "<sup>2</sup> = " +result+ "</p>";
-        return result;
-      }
 
-      document.getElementById('numberToSquareSubmit').onclick = function() {
-        console.log('numberToSquareSubmit CLICKED');
-        var value = document.getElementById('numberToSquare').value;
-        console.log(value);
-        testFunc(value);
-        console.log('numberToSquareSubmit END');
-      };
-    </script>
+
+
+
 </body>
 </html>
