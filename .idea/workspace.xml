@@ -2,243 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c25e9a9-681a-48a8-9582-dab9ca5daa35" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.babelrc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.eslintignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/playground2.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_data/colors.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_data/nav.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_data/theme-colors.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/callout-danger-async-methods.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/callout-info-mediaqueries-breakpoints.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/callout-warning-color-assistive-technologies.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/header.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/nav-navdrawer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/nav-toolbar.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_includes/page-jumbotron.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_layouts/base.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_layouts/docs.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_plugins/bugify.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_plugins/callout.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/_plugins/example.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apple-touch-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/src/expansion-panel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/src/floating-label.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/src/nav-drawer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/src/selection-control-focus.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/src/tab-switch.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/src/util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/js/third-party/pickadate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/_colors.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/_functions.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/_mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/_print.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/_utilities.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/_variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/base/_base.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/base/_grid.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_alert.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_badge.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_breadcrumb.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_carousel.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_close.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_code.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_custom-form.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_form.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_image.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_jumbotron.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_media.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_nav.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_pagination.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_popover.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_responsive-embed.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/bootstrap/_transition.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_button-flat.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_button-float.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_button-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_button.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_card.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_chip.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_data-table.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_dialog.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_expansion-panel.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_menu.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_navdrawer.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_picker.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_progress-circular.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_progress.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_selection-control.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_stepper.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_tab.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_text-field-box.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_text-field-floating-label.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_text-field-input-group.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_text-field.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_toolbar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/material/_tooltip.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_background-variant.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_border-radius.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_breakpoint.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_clearfix.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_float.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_form.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_grid-framework.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_grid.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_hex-to-rgba.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_hover.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_image.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_list.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_material-icons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_nav-divider.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_reset-text.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_screenreader.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_strip-unit.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_text-alignment.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_text-emphasis.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_text-hide.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_text-truncate.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_transition.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/mixins/_typography.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_align.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_background.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_border.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_clearfix.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_display.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_flex.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_float.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_material-icons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_position.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_screenreader.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_sizing.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_spacing.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_text.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/utilities/_visibility.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_elevation-shadow.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_grid.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_palette.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_spacer.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_transition.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_typography.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_variable-bootstrap.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/assets/scss/variables/_variable-material.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/.eslintrc.addon.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/.eslintrc.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/.htmllintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/.stylelintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/lint-vars.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/postcss.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build/rollup.config.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/content/javascript/maths.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/material.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/material.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/material.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/material.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs-assets/js/docs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs-assets/scss/docs.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/alerts.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/badge.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/breadcrumb.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/button-group.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/buttons.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/card.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/carousel.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/collapse.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/dropdowns.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/forms.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/input-group.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/jumbotron.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/list-group.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/modal.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/navbar.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/navs.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/pagination.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/popovers.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/progress.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/scrollspy.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/components/tooltips.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/content/code.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/content/figures.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/content/images.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/content/reboot.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/content/tables.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/content/typography.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-default.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-permanent-clipped.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-permanent-float-card.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-permanent-float.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-permanent.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-persistent.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-right.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/examples/navdrawer-temporary.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/getting-started/introduction.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/getting-started/theming.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/getting-started/tooling.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/layout/grid.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/layout/media-object.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/layout/overview.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/layout/utilities-for-layout.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/buttons.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/cards.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/chips.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/data-tables.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/dialogs.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/expansion-panels.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/icons.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/menu.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/navigation-drawer.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/pickers.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/progress.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/selection-controls.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/steppers.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/tabs.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/text-fields.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/toolbars.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/tooltips.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/material/typography.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/borders.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/clearfix.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/close-icon.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/colors.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/display.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/embed.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/flex.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/float.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/image-replacement.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/position.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/screenreaders.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/sizing.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/spacing.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/text.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/vertical-align.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/4.0/utilities/visibility.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/css/docs.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/css/docs.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/css/docs.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/css/docs.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/images/doc-jumbotron-bg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/docs/js/docs.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/material.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/material.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/material.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/material.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/starter.html" />
       <change beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -266,8 +29,8 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -379,12 +142,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518427305651</updated>
-      <workItem from="1518427308509" duration="5417000" />
+      <workItem from="1518427308509" duration="5772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5417000" />
+    <option name="totallyTimeSpent" value="5772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -431,8 +194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
           <folding />
         </state>
       </provider>
