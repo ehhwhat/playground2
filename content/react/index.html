@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+    <title>React Basic</title>
+
+    <!-- CSS -->
+    <!-- Add Material font (Roboto) and Material icon as needed -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="../../css/material.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav >
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">JavaScript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Maths</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+    <hr class="mt-5 mb-5 invisible"/>
+    <h1>React</h1>
+
+    <div id="book-shelf"></div>
+
+    <script type="text/babel">
+
+        class BookShelf extends React.Component {
+            render() {
+                return (
+                    <div className="row">
+                        <Book title="1984" author="George Orwell" rating="5" body="Incredible"/>
+                        <Book title="Life of pi" author="Yann Martell" rating="4" body="What an ending!!!!"/>
+                        <Book title="Animal Farm" author="George Orwell" rating="5" body="Incredible"/>
+                        <Book title="Orient" author="Yann Martell" rating="4" body="What an ending!!!!"/>
+                    </div>
+                )
+            }
+        }
+        class Book extends React.Component {
+            render() {
+                return (
+                    <div className="col">
+                        <div className="card text-white bg-warning mb-3">
+                            <div className="card-header">
+                                <h2 className="display-3">{this.props.title}</h2>
+                            </div>
+                            <div className="card-body">
+                                <hr class="invisible"/>
+                                <p>{this.props.body}</p>
+                                <p><small>{this.props.author} | {this.props.rating}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        };
+
+        ReactDOM.render (
+            <BookShelf />, document.getElementById('book-shelf')
+        );
+
+    </script>
+</div>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+<script src="../../js/material.min.js"></script>
+
+
+
+
+
+</body>
+</html>
