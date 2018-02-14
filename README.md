@@ -6,6 +6,7 @@ Here you will find code examples that i have been messing around with. At the mo
 - Maths
 - (Arrays)
 - (Objects)
+- (Conditionals and Ternary Conditionals)
 - (Constructors)
 - (Demo Bookshelf app)
 
