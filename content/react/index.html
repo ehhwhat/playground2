@@ -18,6 +18,17 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
+    <style>
+        .fakeshelf {
+            border-bottom:5px solid #ccc;
+            background:#eee;
+            padding:2rem 2rem 1rem;
+        }
+        .card img {
+            max-width:100%;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -28,14 +39,32 @@
                 <nav >
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">JavaScript</a>
+                            <a class="nav-link disabled" href="#">React</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Maths</a>
-                        </li>
+                        <!--<li class="nav-item">-->
+                            <!--<a class="nav-link active" href="#">Maths</a>-->
+                        <!--</li>-->
                     </ul>
                 </nav>
 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#book-shelf-1">Static</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book-shelf-2">Inline properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book-shelf-3">Array</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#book-shelf-4">Array with dynamic grid</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -43,35 +72,127 @@
 
 
 <div class="container">
+
     <hr class="mt-5 mb-5 invisible"/>
-    <h1>React</h1>
 
-    <div id="book-shelf"></div>
+    <!--
+        EXAMPLE 1
+        CODE BLOCK TO CREATE THE HARDCODED ARRAY
+        VERSION OF THE BOOKSHELF.
+    -->
 
+    <!-- TARGET TO RENDER THE MARKUP -->
+    <div id="book-shelf-1" class="fakeshelf"></div>
+
+    <!-- REACT CODE -->
     <script type="text/babel">
 
         class BookShelf extends React.Component {
             render() {
                 return (
-                    <div className="row">
-                        <Book title="1984" author="George Orwell" rating="5" body="Incredible"/>
-                        <Book title="Life of pi" author="Yann Martell" rating="4" body="What an ending!!!!"/>
-                        <Book title="Animal Farm" author="George Orwell" rating="5" body="Incredible"/>
-                        <Book title="Orient" author="Yann Martell" rating="4" body="What an ending!!!!"/>
+                    <div className="">
+                        <div className="row">
+                            <div className="col ">
+                                <h3>Static</h3>
+                                <p>In this example all data is hardcoded. <span className="text-danger">To add a different book i would need to create a new REACT component for each one.</span></p>
+                                <hr className="invisible" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <Book />
+                            <Book />
+                            <div className="col-sm-12 text-center">
+                                <hr className="invisible" />
+                                <ul className="list-inline">
+                                    <li className="list-inline-item"><strong>Component/s:</strong> <code>BookShelf</code>, <code>Book</code></li>
+                                    <li className="list-inline-item"><strong>Data:</strong> Hardcoded and static</li>
+                                    <li className="list-inline-item"><strong>Methods:</strong> </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 )
             }
+
         }
+
         class Book extends React.Component {
             render() {
                 return (
-                    <div className="col">
-                        <div className="card text-white bg-warning mb-3">
-                            <div className="card-header">
-                                <h2 className="display-3">{this.props.title}</h2>
-                            </div>
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-2">
+                        <div className="card mb-3">
+                            <img className="card-img-top" src="https://www4.alibris-static.com/1984/isbn/9781328869333_l.jpg" />
                             <div className="card-body">
-                                <hr class="invisible"/>
+                                <p className="card-title">1984</p>
+                                <hr className="invisible"/>
+                                <p>Best book ever.</p>
+                                <p><small>George Orwell | 5</small></p>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render (
+            <BookShelf />, document.getElementById('book-shelf-1')
+        );
+
+    </script>
+
+    <hr class="mt-5 mb-5 invisible"/>
+
+    <!--
+        EXAMPLE 2
+        CODE BLOCK TO CREATE THE HARDCODED ARRAY
+        VERSION OF THE BOOKSHELF.
+    -->
+
+    <!-- TARGET TO RENDER THE MARKUP -->
+    <div id="book-shelf-2" class="fakeshelf"></div>
+
+    <!-- REACT CODE -->
+    <script type="text/babel">
+
+        class BookShelf extends React.Component {
+            render() {
+                return (
+                    <div className="">
+                        <div className="row">
+                            <div className="col">
+                                <h3>Inline properties</h3>
+                                <p>In this example i will pass in data from inline properties.</p>
+                                <hr className="invisible" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <Book id="1" title="1984" author="George Orwell" rating="5" body="Best book ever." cover="https://www4.alibris-static.com/1984/isbn/9781328869333_l.jpg" />
+                            <Book id="2" title="Life of PI" author="Yann Martell" rating="4" body="Love the ending." cover="http://cdn.collider.com/wp-content/uploads/life-of-pi-poster2.jpg" />
+                            <Book id="3" title="Lost city of Z" author="David Grann" rating="4" body="Crazy stuff." cover="https://images-eu.ssl-images-amazon.com/images/I/51o-3-68PML.jpg" />
+                            <div className="col-sm-12 text-center">
+                                <hr className="invisible" />
+                                <ul className="list-inline">
+                                    <li className="list-inline-item"><strong>Component/s:</strong> <code>BookShelf</code>, <code>Book</code></li>
+                                    <li className="list-inline-item"><strong>Data:</strong> Inline <code>properties</code></li>
+                                    <li className="list-inline-item"><strong>Methods:</strong> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
+
+        }
+
+        class Book extends React.Component {
+            render() {
+                return (
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-2">
+                        <div className="card mb-3">
+                            <img className="card-img-top" src={this.props.cover} />
+                            <div className="card-body">
+                                <p className="card-title">{this.props.title}</p>
+                                <hr className="invisible"/>
                                 <p>{this.props.body}</p>
                                 <p><small>{this.props.author} | {this.props.rating}</small></p>
                             </div>
@@ -79,13 +200,233 @@
                     </div>
                 );
             }
-        };
+        }
 
         ReactDOM.render (
-            <BookShelf />, document.getElementById('book-shelf')
+            <BookShelf />, document.getElementById('book-shelf-2')
         );
 
     </script>
+
+    <hr class="mt-5 mb-5 invisible"/>
+
+    <!--
+        EXAMPLE 3
+        CODE BLOCK TO CREATE THE HARDCODED ARRAY
+        VERSION OF THE BOOKSHELF.
+    -->
+
+    <!-- TARGET TO RENDER THE MARKUP -->
+    <div id="book-shelf-3" class="fakeshelf"></div>
+
+    <!-- REACT CODE -->
+    <script type="text/babel">
+
+        class BookShelf extends React.Component {
+            render() {
+                const books = this._getBooks();
+                return (
+                    <div className="">
+                        <div className="row">
+                            <div className="col">
+                                <h3>Array</h3>
+                                <p>In this example i will pass in data from a hardcoded <code>array</code>.
+                                    I will need to create the <code>array</code> and use the <code>.map</code> to separate each item.
+                                    The title for the number of books will be dynamic using an IF statement to detect length of book list and adjust accordingly.</p>
+                                <hr className="invisible" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm-12 text-center">
+                                <p><span className="badge badge-pill badge-primary">{books.length} {this._getNumberOfBooksTitle(books.length)}</span></p>
+                            </div>
+                            {books}
+                            <div className="col-sm-12 text-center">
+                                <hr className="invisible" />
+                                <ul className="list-inline">
+                                    <li className="list-inline-item"><strong>Component/s:</strong> <code>BookShelf</code>, <code>Book</code></li>
+                                    <li className="list-inline-item"><strong>Data:</strong> <code>array</code></li>
+                                    <li className="list-inline-item"><strong>Methods:</strong> <code>_getBooks()</code>, <code>_getNumberOfBooksTitle()</code></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
+
+            _getBooks() {
+                // Fake object / array of books
+                const booksList = [
+                    {id: 1, title: "1984", author: "George. Orwell", rating: 5, body: "Best book ever.", cover: "https://www4.alibris-static.com/1984/isbn/9781328869333_l.jpg"},
+                    {id: 2, title: "Life of PI", author: "Yann Martell", rating: 4, body: "Love the ending.", cover: "http://cdn.collider.com/wp-content/uploads/life-of-pi-poster2.jpg"},
+                    {id: 3, title: "Lost city of Z", author: "David Grann", rating: 4, body: "Crazy stuff.", cover: "https://images-eu.ssl-images-amazon.com/images/I/51o-3-68PML.jpg"},
+                    {id: 4, title: "In the heart of the sea", author: "Nathaniel Philbrick", rating: 4, body: "This is the book that got me started.", cover: "https://www.booktopia.com.au/http_coversbooktopiacomau/big/9780008126834/in-the-heart-of-the-sea.jpg"},
+                    {id: 5, title: "I, Robot", author: "Isaac Asimov", rating: 4, body: "Nothing like the film.", cover: "https://img.sfbook.com/books/large/i-robot.jpg"},
+                    {id: 6, title: "Les Mis", author: "Victor Hugo", rating: 5, body: "Long but so worth it.", cover: "https://i.pinimg.com/originals/c0/79/d1/c079d16ae2be38a69f4a4edddc27ff2c.jpg"}
+                ];
+                return booksList.map((book) => {
+                    return (
+                        <Book title={book.title}  author={book.author} rating={book.rating} body={book.body} cover={book.cover} key={book.id} />
+                    );
+                });
+            }
+
+            _getNumberOfBooksTitle(bookCount) {
+                if(bookCount === 0) {
+                    return("books?");
+                } else if (bookCount === 1) {
+                    return("book");
+                } else {
+                    return("books");
+                }
+            }
+        }
+
+        class Book extends React.Component {
+            render() {
+                return (
+                    <div className="col-6 col-sm-6 col-md-4 col-lg-2">
+                        <div className="card mb-3">
+                            <img className="card-img-top" src={this.props.cover} />
+                            <div className="card-body">
+                                <p className="card-title">{this.props.title}</p>
+                                <hr className="invisible"/>
+                                <p>{this.props.body}</p>
+                                <p><small>{this.props.author} | {this.props.rating}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render (
+            <BookShelf />, document.getElementById('book-shelf-3')
+        );
+
+    </script>
+
+    <hr class="mt-5 mb-5 invisible"/>
+
+    <!--
+        EXAMPLE 4
+        CODE BLOCK TO CREATE THE HARDCODED ARRAY
+        VERSION OF THE BOOKSHELF.
+    -->
+
+    <!-- TARGET TO RENDER THE MARKUP -->
+    <div id="book-shelf-4" class="fakeshelf"></div>
+
+    <!-- REACT CODE -->
+    <script type="text/babel">
+
+        class BookShelf extends React.Component {
+            render() {
+                const books = this._getBooks();
+                return (
+                    <div className="">
+                        <div className="row">
+                            <div className="col">
+                                <h3>Array with dynamic grid</h3>
+                                <p>Same as <a href="#book-shelf-3">Example 3</a> but with added dynamic grid classes to adjust size of each book card depending on number of books.
+                                    <span className="text-danger">Only issue is that with a hardcoded array i need to change the code everytime to show this.</span></p>
+                                <hr className="invisible" />
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm-12 text-center">
+                                <p><span className="badge badge-pill badge-primary">{books.length} {this._getNumberOfBooksTitle(books.length)}</span></p>
+                            </div>
+                            {books}
+                            <div className="col-sm-12 text-center">
+                                <hr className="invisible" />
+                                <ul className="list-inline">
+                                    <li className="list-inline-item"><strong>Component/s:</strong> <code>BookShelf</code>, <code>Book</code></li>
+                                    <li className="list-inline-item"><strong>Data:</strong> <code>array</code></li>
+                                    <li className="list-inline-item"><strong>Methods:</strong> <code>_getBooks()</code>, <code>_getNumberOfBooksTitle()</code></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
+
+            _getBooks() {
+                // Fake object / array of books
+                const booksList = [
+                    {id: 1, title: "1984", author: "George. Orwell", rating: 5, body: "Best book ever.", cover: "https://www4.alibris-static.com/1984/isbn/9781328869333_l.jpg"},
+                    {id: 2, title: "Life of PI", author: "Yann Martell", rating: 4, body: "Love the ending.", cover: "http://cdn.collider.com/wp-content/uploads/life-of-pi-poster2.jpg"},
+                    {id: 3, title: "Lost city of Z", author: "David Grann", rating: 4, body: "Crazy stuff.", cover: "https://images-eu.ssl-images-amazon.com/images/I/51o-3-68PML.jpg"},
+                    {id: 4, title: "In the heart of the sea", author: "Nathaniel Philbrick", rating: 4, body: "This is the book that got me started.", cover: "https://www.booktopia.com.au/http_coversbooktopiacomau/big/9780008126834/in-the-heart-of-the-sea.jpg"},
+                    {id: 5, title: "I, Robot", author: "Isaac Asimov", rating: 4, body: "Nothing like the film.", cover: "https://img.sfbook.com/books/large/i-robot.jpg"},
+                    {id: 6, title: "Les Mis", author: "Victor Hugo", rating: 5, body: "Long but so worth it.", cover: "https://i.pinimg.com/originals/c0/79/d1/c079d16ae2be38a69f4a4edddc27ff2c.jpg"},
+                    {id: 7, title: "2001", author: "Arthur C. Clarke", rating: 4, body: "Amazing.", cover: "https://thequantumcretin.files.wordpress.com/2013/10/2001-a-space-odyssey-by-daniel-norris.jpg"},
+                    {id: 8, title: "Cicero", author: "Robert Harris", rating: 4, body: "Obsessed with Rome now.", cover: "https://www.deadgoodbooks.co.uk/wp-content/uploads/2015/09/9780099474197.jpg"}
+                ];
+
+
+
+                return booksList.map((book) => {
+
+                    const booksListLength = booksList.length;
+                    let gridSize = "col-sm-12";
+                    if(booksListLength === 0) {
+                        console.log('No books?');
+                    } else if (booksListLength <= 3) {
+                        gridSize = "col-6 col-sm-4 col-md-4 col-lg-4";
+                    } else if (booksListLength === 4) {
+                        gridSize = "col-6 col-sm-6 col-md-3 col-lg-3";
+                    } else {
+                        gridSize = "col-6 col-sm-6 col-md-3 col-lg-2";
+                    }
+
+                    return (
+                        <Book title={book.title}  author={book.author} rating={book.rating} body={book.body} cover={book.cover} key={book.id} grid={gridSize}/>
+                    );
+                });
+            }
+
+            _getNumberOfBooksTitle(bookCount) {
+                if(bookCount === 0) {
+                    return("books?");
+                } else if (bookCount === 1) {
+                    return("book");
+                } else {
+                    return("books");
+                }
+            }
+        }
+
+        class Book extends React.Component {
+            render() {
+                return (
+                    <div className={this.props.grid}>
+                        <div className="card mb-3">
+                            <img className="card-img-top" src={this.props.cover} />
+                            <div className="card-body">
+                                <p className="card-title">{this.props.title}</p>
+                                <hr className="invisible"/>
+                                <p>{this.props.body}</p>
+                                <p><small>{this.props.author} | {this.props.rating}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render (
+            <BookShelf />, document.getElementById('book-shelf-4')
+        );
+
+    </script>
+
+
+
+
+
+    <hr class="mt-5 mb-5 invisible"/>
+
 </div>
 
 
