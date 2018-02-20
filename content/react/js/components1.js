@@ -1,8 +1,31 @@
 
+// GENERAL NOTES
+// REACT uses component based architecture.
+// A REACT component is basically a JS function which will return some HTML
+// REACT uses a virtual DOM to make changes before applying them to the actual page DOM/
+// REACT uses diffing to check the virtual DOM with the actual DOM and then to apply changes
+// Every time we write a new REACT component we use it by writing an element named after the component class
+
+// JSX is just another way of writing JS with a transpile step
+// JSX = Javascript XML
+// Code written in curly braces {} is seen as literal JS and allows use to use JS within JSX
+
+// ***** *****
 // EXAMPLE 1
+// ***** *****
+
+// BookShelf will be our ROOT component, almost a wrapper for everything else.
+// Our component BookShelf is a JS class that inherits from the React.Component base class.
+// Component names are written in upper camel case
 class BookShelf extends React.Component {
+    // Every component needs a render() function
     render() {
         return (
+            // I will return some markup which will house my book shelf
+            // Headings, text, markup for grid layout as well.
+            // Here i will also reference my other REACT component class called Book using <Book />
+            // This reference will then pull in whatever is returned by the Book class.
+            // To show 2 books (which happen to be identical) i have used the component class twice
             <div>
                 <div className="row">
                     <div className="col ">
@@ -26,7 +49,6 @@ class BookShelf extends React.Component {
             </div>
         )
     }
-
 }
 
 class Book extends React.Component {
@@ -47,6 +69,9 @@ class Book extends React.Component {
     }
 }
 
+// React.DOM.render is used to inject the components on our HTML page
+// It takes 2 arguments
+// component variable, target container
 ReactDOM.render (
     <BookShelf />, document.getElementById('book-shelf-1')
 );
