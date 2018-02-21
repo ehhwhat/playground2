@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c25e9a9-681a-48a8-9582-dab9ca5daa35" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/content/react/js/components1.js" afterPath="$PROJECT_DIR$/content/react/js/components1.js" />
-    </list>
+    <list default="true" id="2c25e9a9-681a-48a8-9582-dab9ca5daa35" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,16 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/react/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="228" column="103" lean-forward="false" selection-start-line="228" selection-start-column="99" selection-end-line="228" selection-end-column="103" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index5.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/react/index5.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,14 +27,14 @@
       <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/react/index1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="62" column="37" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="31" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components1.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="components1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/react/js/components1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
@@ -56,21 +44,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components6.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/react/js/components6.js">
+      <file leaf-file-name="ajax1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/javascript/ajax1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="391" column="0" lean-forward="false" selection-start-line="391" selection-start-column="0" selection-end-line="401" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index7.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/react/index7.html">
+      <file leaf-file-name="goodreadsJSON.json" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/goodreadsJSON.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="70" column="57" lean-forward="false" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
+            <state relative-caret-position="300">
+              <caret line="713" column="128" lean-forward="false" selection-start-line="713" selection-start-column="128" selection-end-line="713" selection-end-column="128" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/javascript/ajax2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2278">
+              <caret line="134" column="336" lean-forward="false" selection-start-line="134" selection-start-column="336" selection-end-line="134" selection-end-column="336" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/javascript/books.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax1_data.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/javascript/ajax1_data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -86,31 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index8.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/react/index8.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="components8.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/react/js/components8.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="224" column="12" lean-forward="false" selection-start-line="224" selection-start-column="12" selection-end-line="224" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="books.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/react/api/books.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -153,6 +151,11 @@
         <option value="$PROJECT_DIR$/content/react/js/components7.js" />
         <option value="$PROJECT_DIR$/content/react/js/components8.js" />
         <option value="$PROJECT_DIR$/content/react/js/components1.js" />
+        <option value="$PROJECT_DIR$/content/javascript/ajax1_data.html" />
+        <option value="$PROJECT_DIR$/content/javascript/books.json" />
+        <option value="$USER_HOME$/Downloads/goodreadsJSON.json" />
+        <option value="$PROJECT_DIR$/content/javascript/ajax1.html" />
+        <option value="$PROJECT_DIR$/content/javascript/ajax2.html" />
       </list>
     </option>
   </component>
@@ -264,12 +267,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518427305651</updated>
-      <workItem from="1518427308509" duration="49420000" />
+      <workItem from="1518427308509" duration="74741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49420000" />
+    <option name="totallyTimeSpent" value="74741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -474,18 +477,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/react/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="62" column="37" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/react/js/components1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/javascript/ajax1_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/react/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="31" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/javascript/books.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/goodreadsJSON.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="713" column="128" lean-forward="false" selection-start-line="713" selection-start-column="128" selection-end-line="713" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/javascript/ajax1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="391" column="0" lean-forward="false" selection-start-line="391" selection-start-column="0" selection-end-line="401" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/javascript/ajax2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="336" lean-forward="false" selection-start-line="134" selection-start-column="336" selection-end-line="134" selection-end-column="336" />
           <folding />
         </state>
       </provider>
