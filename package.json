@@ -16,7 +16,9 @@
   "bugs": {
     "url": "https://github.com/Daemonite/material/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
   "description": "Daemonite's Material UI is a cross-platform and fully responsive front-end interface based on Google Material Design developed using Bootstrap 4.",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.38",
@@ -28,6 +30,11 @@
     "cssnano": "^4.0.0-rc.2",
     "eslint": "^4.16.0",
     "eslint-plugin-compat": "^2.2.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^5.0.2",
+    "gulp-wrap": "^0.13.0",
     "htmllint-cli": "0.0.6",
     "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.2",
