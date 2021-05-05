@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+    <title>Ajax 1</title>
+
+    <!-- CSS -->
+    <!-- Add Material font (Roboto) and Material icon as needed -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="../../css/material.min.css" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+    <script src="../../js/material.min.js"></script>
+
+
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav >
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">JavaScript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Ajax 1</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+
+    <hr class="mt-5 mb-5 invisible"/>
+
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="display-4">Pull Static Data</h2>
+                    <p class="">Pulls in static HTML file using Ajax when button is clicked. Both examples will use the same .html file to inject button will prefix the url with a specific attribute taken from the buttons html data attr</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Will always 'success'</li>
+                    <li class="list-group-item">Both buttons pull same .html file</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card mb-4 bg-light">
+                <div class="card-body">
+                    <div class="inject-here">
+
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="ajaxStaticData1" data-box="box1" type="button" class="btn btn-info ajaxStaticData">Pull static data</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card mb-4 bg-light">
+                <div class="card-body">
+                    <div class="inject-here">
+
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="ajaxStaticData2" data-box="box2" type="button" class="btn btn-info ajaxStaticData">Pull static data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="mt-5 mb-5 "/>
+
+</div>
+
+<div class="container">
+
+    <hr class="mt-5 mb-5 invisible"/>
+
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="display-4">EXT #1</h2>
+                    <p class="">Same as above but with error handling.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Second box will always error</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card mb-4 bg-light">
+                <div class="card-body">
+                    <div class="inject-here">
+
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="ajaxStaticData3" data-box="box3" type="button" class="btn btn-info ajaxStaticData">Pull static data</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card mb-4 bg-light">
+                <div class="card-body">
+                    <div class="inject-here">
+
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="ajaxStaticData4" data-box="box4" type="button" class="btn btn-info ajaxStaticData">Pull static data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="mt-5 mb-5 "/>
+
+</div>
+
+
+<script>
+
+    // standard click event
+    $(".ajaxStaticData").click(function () {
+
+        const buttonClicked = this;
+        const buttonData = $(this).data('box');
+        const parent = $(this).parent().parent();
+
+
+
+        // start by removing any existing .chips as they will continue forever if not
+        parent.find('.card-body .chip').remove();
+
+        // then add .chip to show dynamic data attr from specific button
+        parent.find('.card-body').prepend('<span class="chip mb-3"><i class="chip-icon">#</i>'+buttonData+'</span>');
+
+        // use ajax to grab this specific html file
+        // if successful find this specific class and inject the html inside
+        // also append the url for the .html file with 'queryString:' and then the data attr from the button clicked
+        // wrapped in IF statement to demo what happens if file not found.
+
+        if($(this).attr('id') === 'ajaxStaticData4') {
+            var htmlFile = 'WILLNOTBEFOUND.html';
+        } else {
+            var htmlFile = 'ajax1_data.html';
+        }
+
+        console.log(htmlFile);
+
+        $.ajax(htmlFile, {
+            context:buttonClicked,
+            success: function (response) {
+                console.log('success');
+                $(this).parent().parent().find('.inject-here').html(response).slideDown();
+                $(this).parent().parent().addClass('border-success');
+                $(this).remove();
+            },
+            data: {"queryString": $(this).data('box')},
+            // Error callback which takes a number of parameters
+            error: function(request, errorType, errorMessage){
+                console.log('error');
+                console.log('Error: ' +errorType+ ' with message ' +errorMessage);
+                $(this).parent().parent().addClass('border-danger');
+            },
+            timeout: 3000,
+            beforeSend: function(){
+                console.log('beforeSend');
+            },
+            complete: function(){
+                console.log('complete');
+                $(this).addClass('');
+            }
+        });
+
+
+    });
+
+</script>
+
+
+
+<div class="container">
+
+    <hr class="mt-5 mb-5 invisible"/>
+
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="display-4">Post to example</h2>
+                    <p class="">Same as above but with error handling.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">???</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card mb-4 bg-light">
+                <div class="card-body testInjection">
+                    <form id="postForm" method="post" action="books.json">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary ajaxPushData">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cand">Cand</div>
+    <div >records_table</div>
+
+
+
+
+    <hr class="mt-5 mb-5 "/>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table" id="records_table1">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Body</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr class="mt-4 mb-4"/>
+    <div class="row">
+        <div class="col">
+            <table class="table" id="records_table2">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col">Body</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr class="mt-4 mb-4"/>
+    <div class="row">
+        <div class="col">
+            <h1>records_table3</h1>
+            <table class="table" id="records_table3">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr class="mt-4 mb-4"/>
+    <div class="row">
+        <div class="col">
+            <table class="table" id="records_table4">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row" id="testrow">
+        <div class="col-12">
+            <h1>Heading</h1>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+    $('#postForm').on('submit', function (event) {
+        event.preventDefault();
+        console.log('ajaxPushData');
+
+        var form = $(this);
+
+        $.ajax({
+            url: 'books.json',
+            type: 'GET',
+            data: { get_param: 'value' },
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                form.remove();
+                var msg = $('<p></p>');
+                msg.append('Book:' + result.title + '.');
+                msg.append('Author:' + result.author + '.');
+                $('.testInjection').html(msg);
+            },
+            contentType: 'application/json'
+        });
+
+    });
+
+    $(document).ready(function () {
+        console.log('ready');
+        // $.ajax({
+        //     type: 'GET',
+        //     url: 'http://ehhwhat.co.uk/testing/json/goodreadsJSONArray.json',
+        //     data: { get_param: 'value' },
+        //     success: function (data) {
+        //         console.log('success 1');
+        //         var names = data;
+        //         console.log(data);
+        //         $('#cand').html(data);
+        //     }
+        // });
+
+        // $.getJSON('http://ehhwhat.co.uk/testing/json/goodreadsJSONArray.json', function(data) {
+        //     console.log('success 2');
+        //     console.log(data);
+        // });
+
+        $.getJSON("http://ehhwhat.co.uk/testing/json/books.json", function (data) {
+            console.log('success 3');
+            $.each(data, function (i, item) {
+                console.log(data);
+                $('<div class="col-sm-3">').html("<div class='card mb-4'><img class='card-img-top' src='"+data[i].cover+"' /><div class='card-body'><p>" + data[i].id + "</p><p>" + data[i].title + "</p><p>" + data[i].author + "</p><p>" + data[i].rating + "</p><p>" + data[i].body + "</p></div></div>").appendTo('#testrow');
+            });
+        });
+
+        // $.getJSON("http://ehhwhat.co.uk/testing/json/goodreadsJSONArray.json", function (data) {
+        //     console.log('success 3');
+        //     $.each(data, function (i, item) {
+        //         console.log(data);
+        //         $('<tr>').html("<td>" + data[i].id + "</td><td>" + data[i].title + "</td><td>" + data[i].author + "</td><td>" + data[i].rating + "</td><td>" + data[i].body + "</td>").appendTo('#records_table2 tbody');
+        //     });
+        // });
+
+        $.getJSON("http://ehhwhat.co.uk/testing/json/goodreadsJSON.json", function (data) {
+            console.log('success 4');
+            $('<tr>').html("<td>" + data[0].FIELD1 + "</td><td>" + data[0].FIELD2 + "</td><td>" + data[0].FIELD3 + "</td><td>" + data[0].FIELD8 + "</td><td>" + data[0].FIELD15 + "</td>").appendTo('#records_table3 thead');
+
+            $.each(data, function (i, item) {
+                console.log("check here " + data[0].FIELD1);
+                if(i >= 1) {
+                    $('<tr>').html("<td>" + data[i].FIELD1 + "</td><td>" + data[i].FIELD2 + "</td><td>" + data[i].FIELD3 + "</td><td>" + data[i].FIELD8 + "</td><td>" + data[i].FIELD15 + "</td>").appendTo('#records_table3 tbody');
+                }
+            });
+        });
+
+        // $.getJSON("http://ehhwhat.co.uk/testing/json/goodreadsJSONKeyed.json", function (data) {
+        //     console.log('goodreadsJSONKeyed start');
+        //     console.log(data);
+        //     $.each(data, function (i, item) {
+        //         console.log(data);
+        //         $('<tr>').html("<td>" + data[i].id + "</td><td>" + data[i].title + "</td><td>" + data[i].author + "</td><td>" + data[i].rating + "</td><td>" + data[i].body + "</td>").appendTo('#records_table4 tbody');
+        //     });
+        // });
+
+
+    });
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+    <title>Ajax 2</title>
+
+    <!-- CSS -->
+    <!-- Add Material font (Roboto) and Material icon as needed -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Add Material CSS, replace Bootstrap CSS -->
+    <link href="../../css/material.min.css" rel="stylesheet">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Then Material JavaScript on top of Bootstrap JavaScript -->
+    <script src="../../js/material.min.js"></script>
+
+    <style>
+        .card img {
+            max-width:100%;
+        }
+
+        .fade-in{
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            animation: fadein 2s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav >
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">JavaScript</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ajax1.html">Ajax 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ajax2.html"><strong>Ajax 2</strong></a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            <hr class="mt-4 mb-4 invisible"/>
+            <div class="progress" id="progress1">
+                <div class="progress-bar progress-bar-indeterminate" role="progressbar"></div>
+            </div>
+            <hr class="mt-4 mb-4 invisible"/>
+        </div>
+    </div>
+
+    <div class="row" id="injectHere">
+
+    </div>
+
+    <hr class="mt-4 mb-4"/>
+
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            <hr class="mt-4 mb-4 invisible"/>
+            <div class="progress" id="progress2">
+                <div class="progress-bar progress-bar-indeterminate" role="progressbar"></div>
+            </div>
+            <hr class="mt-4 mb-4 invisible"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+
+            <table class="table" id="records_table3">
+                <thead>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    $(document).ready(function () {
+
+        $.getJSON("http://ehhwhat.co.uk/testing/json/goodreadsJSON.json", function (data) {
+            var dataLength = data.length;
+            console.log(dataLength);
+            console.log("seconds should be:" + ((dataLength * 100)) / 1000);
+            $.each(data, function (i, item) {
+                var time = 0;
+                if(i >= 1 ) {
+                    setTimeout(function() {
+                        $('<div class="col-sm-2">').html("<div class='card mb-4 fade-in'><img class='card-img-top' src='"+data[i].FIELD32+"' /><div class='card-body'><p>" + data[i].FIELD1 + "</p><p>" + data[i].FIELD2 + "</p><p>" + data[i].FIELD3 + "</p><p>" + data[i].FIELD8 + "</p><p>" + data[i].FIELD15 + "</p></div></div>").prependTo('#injectHere');
+                    }, 100 * i);
+                }
+            });
+            setTimeout(function() {
+                $('#progress1 .progress-bar').addClass(' bg-success');
+                setTimeout(function() {
+                    $('#progress1').fadeOut('slow');
+                }, 2000);
+            }, (dataLength * 100));
+        });
+
+        $.getJSON("http://ehhwhat.co.uk/testing/json/goodreadsJSON.json", function (data) {
+
+            var dataLength = data.length;
+            console.log(dataLength);
+            console.log("seconds should be:" + ((dataLength * 200)) / 1000);
+
+            $('<tr>').html("<td>" + data[0].FIELD1 + "</td><td>" + data[0].FIELD2 + "</td><td>" + data[0].FIELD3 + "</td><td>" + data[0].FIELD8 + "</td><td>" + data[0].FIELD15 + "</td>").appendTo('#records_table3 thead');
+
+            $.each(data, function (i, item) {
+
+                if(i >= 1) {
+                    setTimeout(function() {
+                        $('<tr>').html("<td>" + data[i].FIELD1 + "</td><td>" + data[i].FIELD2 + "</td><td>" + data[i].FIELD3 + "</td><td>" + data[i].FIELD8 + "</td><td>" + data[i].FIELD15 + "</td>").prependTo('#records_table3 tbody');
+                    }, 200 * i);
+                }
+            });
+            setTimeout(function() {
+                $('#progress2 .progress-bar').addClass(' bg-success');
+                setTimeout(function() {
+                    $('#progress2').fadeOut('slow');
+                }, 2000);
+            }, (dataLength * 200));
+        });
+
+    });
+
+</script>
+
+
+
+
+</body>
+</html>
