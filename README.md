@@ -1,6 +1,6 @@
 # Welcome to my playground
 
-Here you will find code examples that i have been messing around with. At the moment i have sections on...
+Here you will find code examples that i have been messing around with. At the moment I have sections on...
 
 ### Vanilla JavaScript
 - Maths
