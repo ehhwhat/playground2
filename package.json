@@ -17,7 +17,7 @@
     "url": "https://github.com/Daemonite/material/issues"
   },
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "description": "Daemonite's Material UI is a cross-platform and fully responsive front-end interface based on Google Material Design developed using Bootstrap 4.",
   "devDependencies": {
